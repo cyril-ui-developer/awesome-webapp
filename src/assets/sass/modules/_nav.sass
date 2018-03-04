@@ -1,6 +1,8 @@
 /* =================================================================
  * Navigation
  * ================================================================= */
+
+
 #nav-jump 
     border: 1px solid;
     border-radius: 3px;
@@ -35,10 +37,8 @@ nav
         line-height: 2;
         padding: 0 1em;
         outline: none;
-        -webkit-transition: background .4s, color 0s .1s;
-        -moz-transition: background .4s, color 0s .1s;
-        -ms-transition: background .4s, color 0s .1s;
-        transition: background .4s, color 0s .1s;
+        +background-transition(background,.4s, none, none)
+        +background-transition(color, 0s, .1s, none)
 
     mark a 
         background: #000;
@@ -50,8 +50,6 @@ nav
     mark a:focus 
         background: #ccc;
         color: #000;
-        -webkit-transition: background .4s;
-        -moz-transition: background .4s;
-        -ms-transition: background .4s;
-        transition: background .4s;
+        +background-transition(background,.4s, none, none)
+
 
